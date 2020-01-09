@@ -1,0 +1,57 @@
+.c-about{
+    &__wrapper{
+        height: 500px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        margin-top:50px;
+        position: relative;
+    }
+    &__box{
+        width: 50%;
+        margin-top: 100px;        
+        h2{
+            text-align: center;
+            margin: 50px auto;
+        }
+        p{
+            width: 80%;
+            text-align: left;
+            margin: 30px auto;
+            letter-spacing: 1px;
+            line-height: 24px;
+        }
+    }
+    &__backbox{
+        position: absolute;
+        width: 60%;
+        height: 450px;
+        background-color:#ae9d9d;;
+        top: 60px;
+        right: 150px;
+        z-index: -1;
+    }
+    &__image{
+        width:50%;
+        margin: 100px auto;
+        img{
+            width:95%;
+            box-shadow: 4px 4px black;
+        }
+    }
+    &__btn-wrapper{
+        text-align: center;
+        button{
+            background-color:#14D0B3;
+            color:white;
+            text-shadow: 1px 1px black;
+            width: 200px;
+            height: 50px;
+            a{
+                color: white;
+                text-decoration: none;
+            }
+        }
+
+    }
+}

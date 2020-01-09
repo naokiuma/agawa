@@ -1,0 +1,28 @@
+.c-news{
+    &__wrapper{
+        //overflow: hidden;
+        text-align: center;
+        img{
+            max-height: 200px;
+            float: right;
+
+        }
+    }
+
+    &__text{
+        width: 55%;
+        float: left;
+        text-align: center;
+        margin: 20px auto auto 30px;
+        border-left: 50px solid #14D0B3;
+        border-top: 1px black solid;
+        h2{
+            margin: 20px;
+        }
+        p{
+            margin: 10px;
+        }
+
+    }
+
+}

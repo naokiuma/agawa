@@ -1,0 +1,50 @@
+.c-recruit{
+    &__wrapper{
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__side{
+        width: 25%;
+        height: 100%;
+        text-align: center;
+        h2{ 
+            font-weight: lighter;
+            margin: 150px auto 50px auto;
+            &::after{
+                content: "Recruit";
+                display: inherit;
+                color:#8e8e0b;
+            }
+        }
+        p{
+            text-shadow: 2px;
+            border: 2px black dotted;
+            width:50%;
+            margin:auto;
+            background-color: yellow;
+            padding: 10px;
+        }
+    }
+    &__hero{
+        width: 75%;
+        height: 100%;
+    }
+    &__bg{
+        background:url(../image/r-hero.jpg);
+        background-size: cover;
+        height: 85%;
+
+    }
+    &__text{
+        height: 15%;
+        h1{
+            font-size: 30px;
+            text-align: center;
+            height: 100px;
+            line-height: 100px;
+            background-color: #8080802b;
+        }
+    }
+}

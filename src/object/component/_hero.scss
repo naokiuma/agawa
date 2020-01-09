@@ -1,0 +1,88 @@
+.c-hero {
+    height: 100vh;
+    width: 100%;
+    background:url(../image/out/hero-bg.jpg);
+    background-size: cover;
+    position: relative;
+    clip-path: polygon(0 0,100% 0,100% 100%,50% 98%, 0 100%);
+
+    &__logo{
+        background-color: #14D0B3;
+        width: 25%;
+        height: 100%;
+        color:white;
+        text-align: center;
+        line-height: 60px;
+        font-size: 24px;
+        text-shadow: 1px 1px black;
+        padding-top: 45px;
+        display: block;
+        a{
+            text-decoration: none;
+            color: white;
+        }
+    }
+    &__adress{
+        font-size: 14px;
+        letter-spacing: 1px;
+        line-height: 20px;
+        margin: auto 20px auto auto;
+        border: 1px#8e8e0b6b solid;
+        padding: 10px;
+        span{
+            font-size: 20px;
+            line-height: 35px;
+        }
+    }
+    &__top{
+        position: absolute;
+        top: 30%;
+        left: 100px;
+        h1{
+            margin: 15px auto;
+            font-size: 5rem;
+        }
+    }
+    &__recruit{
+        width:160px;
+        height:160px;
+        border-radius:50%;
+        background-color:white;
+        text-align: center;
+        line-height: 160px;
+        border: dotted #14D0B3;
+        font-size: 20px;
+        position:absolute;
+        bottom:20px;
+        right: 20px;
+        transition: 0.3s;
+ 
+        &::after{
+        content:"";
+        display:inline-block;
+        height: 100%;
+        width: 100%;
+        border-radius: 100px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all .4s;
+        background: white;
+
+    }
+
+  }
+  a{
+      text-decoration: none;
+      color: black;
+  }
+}
+
+
+.c-hero__recruit:hover::after{
+    transform: scaleX(1.5) scaleY(1.5);
+    opacity: 0;
+}
+
+

@@ -1,0 +1,39 @@
+.xl-main{
+    height: 800px;
+}
+.l-main{
+    height: 600px;
+}
+
+.s-main{
+    height: 250px;
+    margin: 100px auto auto auto;
+}
+
+.l-space{
+    height: 100px;
+    width: 100%;
+    &__border{
+        display: block;
+        border-bottom:black 3px solid;
+        width: 70%;
+        height: 100%;
+        margin: auto;
+        position: relative;
+        &:after{
+            content: "";
+            width: 20%;
+            border:#14D0B3 1px solid;
+            position: absolute;
+            bottom: -3px;
+        }
+    }
+}
+.l-footer{
+    height: 200px;
+    width: 100%;
+    background-color: beige;
+    margin-top: 50px;
+    border-top: 3px solid;
+}
+

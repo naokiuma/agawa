@@ -1,0 +1,21 @@
+.c-return{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: block;
+    background: #14D0B3;
+    width: 100px;
+    height: 50px;
+    border: 1px solid;
+    font-size: 14px;
+    box-shadow: 2px 2px;
+    line-height: 50px;
+    text-align: center;
+    z-index: 10;
+    animation-name: moveInRight;
+    animation-duration: 0.7s;
+    a{
+        text-decoration: none;
+        color: white;
+    }
+}

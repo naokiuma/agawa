@@ -1,0 +1,206 @@
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>阿川工務店</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:100,300&display=swap&subset=japanese" rel="stylesheet">
+
+    <script
+			  src="https://code.jquery.com/jquery-3.4.1.min.js"
+			  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+			  crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+</head>
+<body>
+    
+    <header v-bind:class="{ hidden: isActive }" class="l-header js-scroll" id="scroll-nav">
+        <div class="c-hero__logo"><a href="index.html">阿川工務店</a></div>
+        <!--<div class="c-hero__adress">
+            <p><span>Infomation</span><br>
+                【住所】〒123-4567 神奈川県XX市深川町1-2-3<br>
+                【TEL】00-0000-0000<br>
+                【MAIL】example@gmail.com<br>
+                【営業時間】月〜金 10:00~18:30 / 休日：土日祝
+             </p>
+        </div>-->
+        <div class="c-nav__wrapper">
+            <ul>
+                <li>
+                    <a href="index.html#news">お知らせ</a>
+                </li>
+                <li>
+                    <a href="index.html#work">施工事例</a>
+                </li>
+                <li>
+                    <a href="index.html#contact">お問い合わせ</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <section class="c-hero" id="top">
+        <div class="c-hero__top">
+            <h1>この街の暮らしを作る。</h1>
+        </div>
+        <a href="recruit.html"><div class="c-hero__recruit">採用情報</div></a>
+        
+        
+    </section>
+
+    <!--topへ戻る-->
+    <div class="c-return">
+        <a href="#top">Topへ戻る</a>
+    </div>
+    <!--ニュース-->
+    <div id="news" style="height: 100px;"></div>
+    <section class="s-main">
+        <div class="c-news__wrapper">
+            <div class="c-news__text">
+                <h2>NEWS/お知らせ</h2>
+                <p>2020/01/02：人材募集中です。</p>
+                <p>2019/12/20：年末年始の営業時間のお知らせ</p>
+            </div>
+
+        <img src="./image/news3.jpg" alt="about">
+        <img src="./image/news2.jpg" alt="about">
+        <img src="./image/news.jpg" alt="about">
+        </div>
+    </section>
+    
+
+    <div class="l-space"><div class="l-space__border"></div></div>
+
+
+    <!--about-->
+    <section class="l-main">
+        <div class="c-about__wrapper">
+            <div class="c-about__box">
+                <h2>積み重ねた信頼と実績</h2>
+                <p>阿川工務店は54年の間、<br>この街、深川町で建築やインテリアを請け負ってきました。<br>
+                    この町の皆様にくつろげる空間を提供する工務店です。
+                </p>
+                <div class="c-about__btn-wrapper">
+                    <button><a href="#work">施工事例</a></button>
+                </div>
+
+                <div class="c-about__backbox"></div>
+
+            </div>
+            <div class="c-about__image">
+                <img src="./image/out/archi.jpg" alt="about">
+            </div>
+        </div>
+    </section>
+
+    <div class="l-space"><div class="l-space__border"></div></div>
+
+    <section class="xl-main" style="margin-top: 100px;">
+        <div class="c-hearing__wrapper">
+            <div class="c-hearing__bg">
+
+            </div>
+            <div class="c-hearing__btn-wrapper">
+                    <button><a href="#contact">お問い合わせ</a></button>
+            </div>
+            <div class="c-hearing__text">
+                <h2>二人三脚で。</h2>
+                <p>
+                    家を建てる時、部屋を改装する時。<br>
+                    いつでもそこにはお客様の「想い」があります。<br><br>
+                    その想いに寄り添い、一緒に考え、<br>お客様にとってベストの建築を提供します。<br>
+                    <br>
+                    不明点、要望、なんでもお問い合わせください。<br><br>
+                </p>
+
+            </div>
+
+            
+
+        </div>
+    </section>
+
+    <div class="l-space" id="work"><div class="l-space__border"></div></div>
+
+    <section class="xl-main">
+        <div class="c-work__wrapper">
+            <div class="c-work__toptext">
+            <h2 class="c-work__box">施工事例</h2>
+            </div>
+            <p>外装、内装の施工事例を紹介します。<br>
+               それぞれ画像をクリックし、表示をご確認ください。
+            </p>
+            <div id="vue-work">
+                <works-comp></works-comp>
+            </div>
+        </div>
+    <section>
+
+    <div class="l-space" id="work"><div class="l-space__border"></div></div>
+
+    
+    <section class="xl-main" id="contact">
+        <div class="c-form__wrapper">
+            <div class="c-work__toptext">
+            <h2 class="c-work__box">お問い合わせ</h2>
+            </div>
+            <form action="" method="post">
+                <label>
+                    <p>名前</p>
+                    <input type="text">
+                </label>
+
+                <label>
+                    <p>メールアドレス</p>
+                    <input type="email" name="email">
+                </label>
+
+                <label>
+                    <p>お問い合わせ内容</p>
+                    <textarea type="textarea" name="" id=""></textarea>
+                </label>
+
+
+                <p>※各項目は必須です。</p>
+                    
+                <div class="c-form__submit">
+                <input type="submit" value="送信"><input type="reset" value="リセット">
+                </div>
+            </form> 
+            
+        </div>
+    </section>
+
+    <footer class="l-footer">
+        <div class="c-footer__info">
+            <ul>
+                <li><a href="#news">お知らせ</a></li>
+                <li><a href="#work">施工事例</a></li>
+                <li><a href="#contact">お問い合わせ</a></li>
+                <li><a href="recruit.html">採用情報</a></li>
+            </ul>
+        </div>
+        <div class="c-footer__info-wraaper">
+        <div class="c-footer__address">
+                <p><span>Infomation</span>
+                    <br>【住所】〒123-4567 神奈川県XX市深川町1-2-3<br>
+                    【TEL】00-0000-0000<br>
+                    【MAIL】example@gmail.com<br>
+                    【営業時間】月〜金 10:00~18:30 / 休日：土日祝
+                 </p>
+        </div>
+        <div class="c-footer__logo"><a href="#top">© 2020 阿川工務店,inc</a></div>
+        </div>
+
+        
+        
+    </footer>
+
+
+<script src="js/work.js"></script><!--アンカーリンク。vue.js-->
+<script src="js/scroll-nav.js"></script><!--ナビゲーションの動き。vue.js-->
+<script src="js/scroll-link.js"></script><!--アンカーリンク。js-->
+<script src="js/top.js"></script><!--topへ戻る-->
+</body>
+</html>

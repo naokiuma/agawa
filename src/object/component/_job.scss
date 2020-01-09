@@ -1,0 +1,67 @@
+.c-job{
+    &__infowrapper{
+        text-align: center;
+        h2{
+            margin: 50px auto;
+        }
+    }
+    &__cards{
+        width: 90%;
+        height: 100%;
+        margin: auto;
+        background-color: #8080802b;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__card{
+        width: 45%;
+        margin: auto;
+        height: 90%;
+        background-color: white;
+        h3{
+            margin: 50px;
+            font-style:lighter;
+        }
+        p{
+            margin: 10px;
+            letter-spacing: 1px;
+            height: 150px;
+        }
+        img{
+            width: 60%;
+            box-shadow: 4px 4px;
+        }
+    }
+    &__feature{
+        width: 90%;
+        height: 100%;
+        margin: auto;
+        background-color: #8080802b;
+        display:flex;
+        flex-flow: column;
+        -webkit-box-pack:justify;
+        -ms-flex-pack:justify;
+        justify-content:space-between;
+    }
+    &__each{
+        height: 30%;
+        width: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+        img{
+            border: 3px solid black;
+            height: 80%;
+            margin: auto;
+        }
+        p{
+            width: 75%;
+            margin: auto;
+        }
+        span{
+            font-size: 20px;
+        }
+
+    }
+
+}

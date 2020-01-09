@@ -1,0 +1,157 @@
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>阿川工務店</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:100,300&display=swap&subset=japanese" rel="stylesheet">
+    <script
+			  src="https://code.jquery.com/jquery-3.4.1.min.js"
+			  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+			  crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+</head>
+
+
+
+<body>
+        <header v-bind:class="{ hidden: isActive }" class="l-header js-scroll" id="scroll-nav">
+                <div class="c-hero__logo"><a href="index.html">阿川工務店</a></div>
+                <div class="c-nav__wrapper">
+                    <ul>
+                        <li>
+                            <a href="index.html#news">お知らせ</a>
+                        </li>
+                        <li>
+                            <a href="index.html#work">施工事例</a>
+                        </li>
+                        <li>
+                            <a href="index.html#contact">お問い合わせ</a>
+                        </li>
+                    </ul>
+                </div>
+            </header>
+    <!--topへ戻る-->
+    <div class="c-return">
+        <a href="#top">Topへ戻る</a>
+    </div>
+
+    <section class="c-recruit__wrapper">
+        <div class="c-recruit__side">
+            <h2>人材募集</h2><br>
+            <p>営業職/設計職<br>
+                募集中！</p>
+        </div>
+        <div class="c-recruit__hero">
+            <div class="c-recruit__bg"></div>
+            <div class="c-recruit__text">
+                <h1>この街を一緒に支える方を募集します。</h1>
+            </div>
+        </div>
+    </section>
+
+    <div class="l-space"><div class="l-space__border"></div></div>
+
+    <section class="l-main">
+        <div class="c-job__infowrapper">
+            <h2>募集職種</h2>
+            <div class="c-job__cards">
+                <div class="c-job__card">
+                    <h3>お客様のニーズを聞き出し、<br>共に考える営業職。</h3>
+                    <p>営業職といってもただ売り込み、受注をするお仕事ではありません。<br>
+                        初めて家を建てる方、リフォームをされる方、<br>
+                        暮らしに応じて内装を変えたい方、お客様の要望を聞き出し、<br>
+                        より良い方法を一緒に考えるお仕事です。
+                    </p>
+                    <img src="./image/salesman.jpg" alt="営業職">
+                </div>
+                <div class="c-job__card">
+                    <h3>お客様のニーズを<br>実現するための設計職。</h3>
+                    <p>実現するために何が必要か？<br><br>
+                        様々なニーズに対して、<br>
+                        実現するためのプランを具体的なデータに落とし込み、<br>
+                        形にするお仕事です。<br>
+                    </p>
+                    <img src="./image/archi.jpg" alt="設計職">
+                </div>
+            </div>
+        </div>
+
+        <div class="l-space"><div class="l-space__border"></div></div>
+
+        <section>
+            <div class="c-job__infowrapper">
+                <h2>阿川工務店の職場の特徴</h2>
+                <div class="c-job__feature">
+                    <div class="c-job__each">
+                        <img src="./image/worklife.jpg" alt="ワークライフバランス">
+                        <p><span>ワークライフバランスを大事にします。</span><br>
+                            より良い仕事のために、まずは心と体に健康を。<br>
+                            残業は原則禁止し、営業時間内で集中して業務にあたります。<br>
+                            
+                        </p>
+                    </div>
+                    <div class="c-job__each">
+                        <img src="./image/meeting.jpg" alt="ミーティング">
+                        <p><span>充実の研修</span><br>
+                            定期的に開かれる業務時間内の研修、勉強会で、<br>
+                            未経験者はもちろん、経験者も知識のブラッシュアップを図ります。<br>
+                        </p>
+                    </div>
+                    <div class="c-job__each">
+                        <img src="./image/grobal.jpg" alt="グローバル">
+                        <p><span>グローバル展開</span><br>
+                            グループ企業は世界に7社。<br>
+                            将来的により広い世界で業務に携わりたい方には、<br>
+                            希望に応じて海外出張にも参加いただけます。
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <footer class="l-footer">
+            <div class="c-footer__info">
+                    <ul>
+                        <li><a href="index.html#news">お知らせ</a></li>
+                        <li><a href="index.html#work">施工事例</a></li>
+                        <li><a href="index.html#contact">お問い合わせ</a></li>
+                        <li><a href="recruit.html">採用情報</a></li>
+                    </ul>
+            </div>
+            <div class="c-footer__info-wraaper">
+            <div class="c-footer__address">
+                        <p><span>Infomation</span>
+                            <br>【住所】〒123-4567 神奈川県XX市深川町1-2-3<br>
+                            【TEL】00-0000-0000<br>
+                            【MAIL】example@gmail.com<br>
+                            【営業時間】月〜金 10:00~18:30 / 休日：土日祝
+                         </p>
+            </div>
+            <div class="c-footer__logo"><a href="index.html">© 2020 阿川工務店,inc</a></div>
+            </div>
+        
+                
+                
+        </footer>
+
+
+
+        
+        
+    </section>
+
+
+
+
+
+
+<script src="js/work.js"></script>
+<script src="js/scroll-nav.js"></script><!--ナビゲーションの動き-->
+<script src="js/scroll-link.js"></script><!--アンカーリンク-->
+<script src="js/top.js"></script><!--topへ戻る-->
+</body>
+</html>

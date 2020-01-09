@@ -1,0 +1,50 @@
+.c-form{
+    &__wrapper{
+        text-align: center;
+        height: 100%;
+        width: 90%;
+        margin: auto;
+        h2{
+            padding: 50px;
+            font-size: 40px;
+            &::after{
+                content: "Contact";
+                display: inherit;
+                color:#8e8e0b;
+                font-size: 20px;
+            }
+        }
+        label{
+            display: block;
+        }
+        p{
+            margin: 10px;
+            font-size: 20px;
+            letter-spacing: 2px;
+        }
+    }
+
+}
+
+form input {
+    margin:5px;
+    border: 1px solid;
+    font-size: 18px;
+    padding: 5px 15px;
+    box-shadow: 4px 4px;
+}
+
+form textarea {
+    height: 200px;
+    width: 80%;
+    margin-bottom:10px;
+    border: 1px solid;
+    font-size: 18px;
+    overflow: scroll;
+    box-shadow: 4px 4px;
+}
+
+.c-formt__submit input {
+    width: 150px;
+    text-align: center;
+}

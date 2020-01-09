@@ -1,0 +1,114 @@
+.c-work{
+    &__wrapper{
+        h2{
+            font-size:40px;
+            text-align: center;
+            //margin: 100px auto 50px auto;
+            //width: 50%;
+            &::after{
+                content: "Works";
+                display: inherit;
+                color:#8e8e0b;
+                font-size: 20px;
+            }
+        } 
+        p{
+            text-align: center;
+        }
+    }
+
+    &__start{
+        text-align: center;
+        height: 100px;
+        line-height: 100px;
+        button{
+            width: 100px;
+            height: 40px;
+            box-shadow: 2px 2px;
+            background-color:#14D0B3;
+            color:white;
+        }
+    }
+    &__group{
+        position: relative;
+        width: 30%;
+        span{
+            position: absolute;
+            top:10%;
+            left:5%;
+            color: white;
+            background-color: #0606064d;
+        }
+    }
+    &__image{
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        margin: 50px auto;
+        img{
+            //height: 280px;
+            width: 100%;
+            box-shadow: 6px 6px;
+            
+        }
+
+    }
+    &__popup{
+        text-align: center;
+        z-index: 2;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background:white;
+        width: 70%;
+        transform: 1s;
+        box-shadow: 6px 6px;
+        h3{
+            margin: 20px;
+        }
+        p{
+            margin: 10px;
+        }
+        img{
+            width: 80%;
+            max-height: 100%;
+            margin: 20px;
+        }
+    }
+    &__toptext{
+            margin:2em 0;
+            position: relative;
+            padding: 0.5em 1.5em;
+            border-top: solid 2px black;
+            border-bottom: solid 2px black;
+            width: 50%;
+            margin: 100px auto;
+        }
+    
+    &__target{
+        transition: .3s;
+       // transform: rotateY( 0deg );
+        &:hover{
+            transform:scale(1.05) ;
+        }
+    }
+}
+
+
+
+.c-work__toptext:before, .c-work__toptext:after{
+    content: '';
+    position: absolute;
+    top: -10px;
+    width: 2px;
+    height: -webkit-calc(100% + 20px);
+    height: calc(100% + 20px);
+    background-color: black;
+}
+.c-work__toptext:before {left: 10px;}
+.c-work__toptext:after {right: 10px;}
+.c-work__toptext h2 {
+    margin: 0; 
+    padding: 0;
+}

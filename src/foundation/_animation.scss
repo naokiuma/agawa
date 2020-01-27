@@ -3,11 +3,9 @@
 @keyframes moveInLeft{
     0%{
         opacity:0;
-        transform: translateX(-100px);
+        transform: translateX(-300px);
     }
-    80%{
-        transform: translateX(20px);
-    }
+
     100%{
         opacity: 1;
         transform: translate(0);
@@ -31,7 +29,7 @@
 @keyframes moveInBottom{
     0%{
         opacity:0;
-        transform: translateY(30px);
+        transform: translateY(200px);
     }
     100%{
         opacity: 1;

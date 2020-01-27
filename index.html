@@ -15,17 +15,10 @@
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
 </head>
 <body>
+
     
     <header v-bind:class="{ hidden: isActive }" class="l-header js-scroll" id="scroll-nav">
         <div class="c-hero__logo"><a href="index.html">阿川工務店</a></div>
-        <!--<div class="c-hero__adress">
-            <p><span>Infomation</span><br>
-                【住所】〒123-4567 神奈川県XX市深川町1-2-3<br>
-                【TEL】00-0000-0000<br>
-                【MAIL】example@gmail.com<br>
-                【営業時間】月〜金 10:00~18:30 / 休日：土日祝
-             </p>
-        </div>-->
         <div class="c-nav__wrapper">
             <ul>
                 <li>
@@ -55,8 +48,8 @@
     </div>
     <!--ニュース-->
     <div id="news" style="height: 100px;"></div>
-    <section class="s-main">
-        <div class="c-news__wrapper">
+    <section class="s-main" id="newspos">
+        <div class="c-news__wrapper js-hide__news">
             <div class="c-news__text">
                 <h2>NEWS/お知らせ</h2>
                 <p>2020/01/02：人材募集中です。</p>
@@ -131,7 +124,7 @@
             <p>外装、内装の施工事例を紹介します。<br>
                それぞれ画像をクリックし、表示をご確認ください。
             </p>
-            <div id="vue-work">
+            <div class="js-hide__work" id="vue-work">
                 <works-comp></works-comp>
             </div>
         </div>
@@ -202,5 +195,48 @@
 <!--<script src="js/scroll-nav.js"></script> ナビゲーションの動き。vue.js-->
 <script src="js/scroll-link.js"></script><!--アンカーリンク。js-->
 <script src="js/top.js"></script><!--topへ戻る-->
+<script>
+
+
+var news = $('#newspos').offset().top -400;
+var work = $('#work').offset().top;
+var newsflg = false;
+var workflg = false; 
+
+$(window).scroll(function(){
+    var sc = $(this).scrollTop();
+
+    if(sc > news  && newsflg == false){
+        //console.log("news!");
+        newsflg = true;
+        $('.js-hide__news').show();
+    }
+    if(sc > work && workflg == false){
+        console.log("work!");  
+        workflg = true;
+        $('.js-hide__work').show();
+
+    }
+
+
+});
+
+//右から左
+/*
+if($('.disc').length){
+  $(window).scroll(function(){
+    var imgPos = $('.disc').offset().top;
+    var scroll = $(window).scrollTop();
+    var windowHeight = $(window).height();
+    if(scroll > imgPos - windowHeight + windowHeight/4){
+      $('.disc').css("animation-name", "RightToLeft");
+      $('.disc').css("opacity", "1");
+    }
+  });
+}
+*/
+
+
+</script>
 </body>
 </html>

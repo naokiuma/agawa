@@ -5,7 +5,7 @@ $(function(){
         let y = $(window).scrollTop();
         if(y >= 250){
             $(".c-return").show();
-            console.log(y);
+            //console.log(y);
         }else{
             $(".c-return").hide();
         }

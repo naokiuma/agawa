@@ -6,3 +6,13 @@
         opacity: 0;
     }
 }
+
+.js-hide__news{
+    display: none;
+}
+
+.js-hide__work{
+    display: none;
+    animation-name: moveInBottom;
+    animation-duration: 0.5s;
+}

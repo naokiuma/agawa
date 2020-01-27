@@ -3,10 +3,7 @@
 @keyframes moveInLeft {
   0% {
     opacity: 0;
-    transform: translateX(-100px);
-  }
-  80% {
-    transform: translateX(20px);
+    transform: translateX(-300px);
   }
   100% {
     opacity: 1;
@@ -26,7 +23,7 @@
 @keyframes moveInBottom {
   0% {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(200px);
   }
   100% {
     opacity: 1;
@@ -107,6 +104,10 @@
 .c-about__box h2 {
   text-align: center;
   margin: 50px auto;
+  background: #14D0B3;
+  width: 70%;
+  padding: 15px;
+  color: white;
 }
 .c-about__box p {
   width: 80%;
@@ -290,6 +291,8 @@ form textarea {
 .c-hero__top h1 {
   margin: 15px auto;
   font-size: 5rem;
+  animation-name: moveInLeft;
+  animation-duration: 1.5s;
 }
 .c-hero__recruit {
   width: 160px;
@@ -396,6 +399,8 @@ form textarea {
 
 .c-news__wrapper {
   text-align: center;
+  animation-name: moveInLeft;
+  animation-duration: 0.5s;
 }
 .c-news__wrapper img {
   max-height: 200px;
@@ -681,6 +686,16 @@ form textarea {
     opacity: 0;
   }
 }
+.js-hide__news {
+  display: none;
+}
+
+.js-hide__work {
+  display: none;
+  animation-name: moveInBottom;
+  animation-duration: 0.5s;
+}
+
 .u_overlay {
   /*　要素を重ねた時の順番　*/
   z-index: 1;

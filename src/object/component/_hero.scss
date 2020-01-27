@@ -41,6 +41,8 @@
         h1{
             margin: 15px auto;
             font-size: 5rem;
+            animation-name: moveInLeft;
+            animation-duration: 1.5s;
         }
     }
     &__recruit{

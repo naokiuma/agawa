@@ -16,3 +16,15 @@
     animation-name: moveInBottom;
     animation-duration: 0.5s;
 }
+
+.js-hide-left{
+    display: none;
+    animation-name: moveInLeft;
+    animation-duration: 0.5s;
+}
+
+.js-hide-right{
+    display: none;
+    animation-name: moveInRight;
+    animation-duration: 0.5s;
+}

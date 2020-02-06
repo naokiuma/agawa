@@ -13,7 +13,7 @@
 @keyframes moveInRight {
   0% {
     opacity: 0;
-    transform: translateX(100px);
+    transform: translateX(300px);
   }
   100% {
     opacity: 1;
@@ -108,6 +108,7 @@
   width: 70%;
   padding: 15px;
   color: white;
+  text-shadow: 1px 1px black;
 }
 .c-about__box p {
   width: 80%;
@@ -240,11 +241,18 @@ form textarea {
   font-size: 18px;
   overflow: scroll;
   box-shadow: 4px 4px;
+  padding: 5px 15px;
 }
 
-.c-formt__submit input {
+.c-form__submitbtn {
   width: 150px;
+  height: 30px;
   text-align: center;
+  box-shadow: 4px 4px;
+  margin: 10px;
+}
+.c-form__submitbtn:hover {
+  box-shadow: 5px 5px;
 }
 
 .c-hero {
@@ -344,6 +352,11 @@ form textarea {
   vertical-align: bottom;
   display: inline-block;
   height: 100%;
+}
+.c-nav__wrapper li:hover {
+  transform: scale(1.03);
+  opacity: 0.7;
+  transition: 0.2s;
 }
 .c-nav__wrapper a {
   text-decoration: none;
@@ -693,6 +706,18 @@ form textarea {
 .js-hide__work {
   display: none;
   animation-name: moveInBottom;
+  animation-duration: 0.5s;
+}
+
+.js-hide-left {
+  display: none;
+  animation-name: moveInLeft;
+  animation-duration: 0.5s;
+}
+
+.js-hide-right {
+  display: none;
+  animation-name: moveInRight;
   animation-duration: 0.5s;
 }
 

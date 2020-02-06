@@ -68,8 +68,8 @@
 
     <!--about-->
     <section class="l-main">
-        <div class="c-about__wrapper">
-            <div class="c-about__box">
+        <div class="c-about__wrapper" id="js-about-left">
+            <div class="c-about__box js-hide-left">
                 <h2>積み重ねた信頼と実績</h2>
                 <p>阿川工務店は54年の間、<br>この街、深川町で建築やインテリアを請け負ってきました。<br>
                     この町の皆様にくつろげる空間を提供する工務店です。
@@ -78,11 +78,11 @@
                     <button><a href="#work">施工事例</a></button>
                 </div>
 
-                <div class="c-about__backbox"></div>
+                <!--<div class="c-about__backbox"></div>-->
 
             </div>
             <div class="c-about__image">
-                <img src="./image/out/archi.jpg" alt="about">
+                <img class="js-hide-right" src="./image/out/archi.jpg" alt="about">
             </div>
         </div>
     </section>
@@ -158,7 +158,7 @@
                 <p>※各項目は必須です。</p>
                     
                 <div class="c-form__submit">
-                <input type="submit" value="送信"><input type="reset" value="リセット">
+                <button class="c-form__submitbtn" type="submit">送信</button><button class="c-form__submitbtn" type="reset">リセット</button>
                 </div>
             </form> 
             
@@ -190,7 +190,6 @@
         
     </footer>
 
-
 <script src="js/work.js"></script><!--画像。vue.js-->
 <!--<script src="js/scroll-nav.js"></script> ナビゲーションの動き。vue.js-->
 <script src="js/scroll-link.js"></script><!--アンカーリンク。js-->
@@ -198,13 +197,18 @@
 <script>
 
 
-var news = $('#newspos').offset().top -400;
+var news = $('#newspos').offset().top-400;
 var work = $('#work').offset().top;
+var aboutleft = $('#js-about-left').offset().top-300;
+
 var newsflg = false;
 var workflg = false; 
+var aboutleftflg = false;
+var aboutrightflg = false;
 
 $(window).scroll(function(){
     var sc = $(this).scrollTop();
+    //console.log(sc);スクロール値
 
     if(sc > news  && newsflg == false){
         //console.log("news!");
@@ -212,12 +216,17 @@ $(window).scroll(function(){
         $('.js-hide__news').show();
     }
     if(sc > work && workflg == false){
-        console.log("work!");  
+        //console.log("work!");  
         workflg = true;
         $('.js-hide__work').show();
-
     }
-
+    if(sc > aboutleft  && aboutleftflg == false){
+        console.log("左!");
+        aboutleftflg = true;
+        aboutrightflg = false;
+        $('.js-hide-left').show();
+        $('.js-hide-right').show();
+    }
 
 });
 

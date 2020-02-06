@@ -42,9 +42,20 @@ form textarea {
     font-size: 18px;
     overflow: scroll;
     box-shadow: 4px 4px;
+    padding: 5px 15px;
 }
 
-.c-formt__submit input {
+.c-form__submitbtn{
+    
     width: 150px;
+    height: 30px;
     text-align: center;
+    box-shadow: 4px 4px;
+    margin: 10px;
+    &:hover{
+        box-shadow: 5px 5px;
+    }
+    
+
+
 }

@@ -1,6 +1,4 @@
 
-
-
 new Vue({
     el:'#scroll-nav',
     data:{

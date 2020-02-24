@@ -16,7 +16,7 @@
         right: 10%;
         background-color: #f0f8ffd4;;
         width: 40%;
-        padding-left: 30px;
+        border: 0.5px dotted;
         h2{
             margin: 50px auto;
             text-align: center;
@@ -24,7 +24,7 @@
         p{
             letter-spacing: 1px;
             line-height: 25px;
-            text-align: left;
+            text-align: center;
         }
     }
     &__btn-wrapper{

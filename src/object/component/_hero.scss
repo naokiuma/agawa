@@ -5,6 +5,10 @@
     background-size: cover;
     position: relative;
     clip-path: polygon(0 0,100% 0,100% 100%,50% 98%, 0 100%);
+    @media screen and (max-width: $res-max-width) {
+        height: 60vh;
+
+      }
 
     &__logo{
         background-color: #14D0B3;
@@ -17,6 +21,12 @@
         text-shadow: 1px 1px black;
         padding-top: 45px;
         display: block;
+        @media screen and (max-width: $res-max-width) {
+            height: 80px;
+            width: 100%;
+            line-height: 80px;
+            padding-top:0;
+          }
         a{
             text-decoration: none;
             color: white;
@@ -38,11 +48,20 @@
         position: absolute;
         top: 30%;
         left: 100px;
+        @media screen and (max-width: $res-max-width) {
+            width: 100%;
+            top: 15%;
+            left:0;
+          }
         h1{
             margin: 15px auto;
             font-size: 5rem;
             animation-name: moveInLeft;
             animation-duration: 1.5s;
+            @media screen and (max-width: $res-max-width) {
+                font-size: 24px;
+                text-align: center;
+              }
         }
     }
     &__recruit{
@@ -58,6 +77,13 @@
         bottom:20px;
         right: 20px;
         transition: 0.3s;
+        @media screen and (max-width: $res-max-width) {
+            font-size: 14px;
+            text-align: center;
+            width:80px;
+            height:80px;
+            line-height: 80px;
+          }
  
         &::after{
         content:"";

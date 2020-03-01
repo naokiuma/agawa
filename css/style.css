@@ -1,5 +1,21 @@
 @charset "UTF-8";
 /*------アニメーション------*/
+@keyframes spmenuMove {
+  0% {
+    transform: translateX(0) rotate(360deg);
+  }
+  40% {
+    transform: translateX(0) rotate(0);
+  }
+  60% {
+    opacity: 0.6;
+    transform: translateX(-200) rotate(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-400px) rotate(0);
+  }
+}
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -8,6 +24,16 @@
   100% {
     opacity: 1;
     transform: translate(0);
+  }
+}
+@keyframes moveInLeftSpmenu {
+  0% {
+    opacity: 0;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(300px);
   }
 }
 @keyframes moveInRight {
@@ -117,6 +143,7 @@
   padding: 15px;
   color: white;
   text-shadow: 1px 1px black;
+  border: 1px solid black;
 }
 .c-about__box p {
   width: 80%;
@@ -546,6 +573,102 @@ form textarea {
   color: white;
 }
 
+.menu-trigger,
+.menu-trigger span {
+  display: inline-block;
+  transition: all 0.4s;
+  box-sizing: border-box;
+}
+
+.menu-trigger {
+  display: none;
+}
+@media screen and (max-width: 415px) {
+  .menu-trigger {
+    display: block;
+    position: fixed;
+    width: 50px;
+    height: 44px;
+    top: 10px;
+    left: 80%;
+    z-index: 10;
+  }
+}
+
+.menu-trigger-active {
+  transform: rotate(360deg);
+}
+
+.menu-trigger span {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+.menu-trigger span:nth-of-type(1) {
+  top: 0;
+}
+
+.menu-trigger span:nth-of-type(2) {
+  top: 20px;
+}
+
+.menu-trigger span:nth-of-type(3) {
+  bottom: 0;
+}
+
+.sp-menu {
+  display: none;
+}
+@media screen and (max-width: 415px) {
+  .sp-menu {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 20%;
+    left: -350px;
+    text-align: center;
+    width: 100%;
+    padding: 15px;
+    z-index: 10;
+    background-color: #ffffffdb;
+    height: 30%;
+    opacity: 0;
+  }
+  .sp-menu ul {
+    height: 100%;
+    width: 100%;
+  }
+  .sp-menu li {
+    list-style: none;
+    height: 25%;
+  }
+  .sp-menu a {
+    text-decoration: none;
+    color: black;
+  }
+}
+
+.sp-menu-active {
+  animation: moveInLeftSpmenu 1s ease-out;
+}
+
+/*
+@keyframes moveInLeft{
+  0%{
+      opacity:0;
+      transform: translateX(-300px);
+  }
+
+  100%{
+      opacity: 1;
+      transform: translate(0);
+  }
+}
+*/
 .c-work__wrapper h2 {
   font-size: 40px;
   text-align: center;
@@ -664,7 +787,7 @@ form textarea {
   width: 90%;
   height: 100%;
   margin: auto;
-  background-color: #8080802b;
+  background-color: #80808061;
   display: flex;
   justify-content: space-between;
 }
@@ -691,7 +814,7 @@ form textarea {
   width: 90%;
   height: 100%;
   margin: auto;
-  background-color: #8080802b;
+  background-color: #80808061;
   display: flex;
   flex-flow: column;
   -webkit-box-pack: justify;
@@ -708,7 +831,7 @@ form textarea {
 .c-job__each img {
   border: 3px solid black;
   height: 80%;
-  margin: auto;
+  margin: auto 50px;
 }
 .c-job__each p {
   width: 75%;

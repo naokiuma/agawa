@@ -23,7 +23,6 @@ $(window).scroll(function(){
         $('.js-hide__work').show();
     }
     if(sc > aboutleft  && aboutleftflg == false){
-        console.log("左!");
         aboutleftflg = true;
         aboutrightflg = false;
         $('.js-hide-left').show();

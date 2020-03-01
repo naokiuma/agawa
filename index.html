@@ -33,6 +33,31 @@
             </ul>
         </div>
     </header>
+
+    <!--スマホメニュー-->
+    <div class="menu-trigger" id="js-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+    </div>
+    
+    <section class="sp-menu">
+        <ul>
+                <li>
+                    <a href="index.html#news">お知らせ<br>News</a>
+                </li>
+                <li>
+                    <a href="index.html#work">施工事例<br>Work</a>
+                </li>
+                <li>
+                    <a href="index.html#contact">お問い合わせ<br>Contact</a>
+                </li>
+                <li>
+                    <span id="js-sp-close">閉じる<br>Close</span>
+                </li>
+        </ul>
+
+    </section>
     <section class="c-hero" id="top">
         <div class="c-hero__top">
             <h1>この街の暮らしを作る。</h1>
@@ -57,7 +82,6 @@
             </div>
 
         <img src="./image/news3.jpg" alt="about">
-        <img src="./image/news2.jpg" alt="about">
         <img src="./image/news.jpg" alt="about">
         </div>
     </section>
@@ -75,7 +99,7 @@
                     この町の皆様にくつろげる空間を提供する工務店です。
                 </p>
                 <div class="c-about__btn-wrapper">
-                    <button><a href="#work">施工事例</a></button>
+                <button class="animation-button"><a href="#work">施工事例</a></button>
                 </div>
 
                 <!--<div class="c-about__backbox"></div>-->
@@ -128,7 +152,7 @@
                 <works-comp></works-comp>
             </div>
         </div>
-    <section>
+    </section>
 
     <div class="l-space" id="work"><div class="l-space__border"></div></div>
 
@@ -165,6 +189,7 @@
         </div>
     </section>
 
+    
     <footer class="l-footer">
         <div class="c-footer__info">
             <ul>
@@ -175,28 +200,18 @@
             </ul>
         </div>
         <div class="c-footer__info-wraaper">
-        <!--
-        <div class="c-footer__address">
-                <p><span>Infomation</span>
-                    <br>【住所】〒123-4567 神奈川県XX市深川町1-2-3<br>
-                    【TEL】00-0000-0000<br>
-                    【MAIL】example@gmail.com<br>
-                    【営業時間】月〜金 10:00~18:30 / 休日：土日祝
-                 </p>
-        </div>
-        -->
         <div class="c-footer__logo"><a href="#top">© 2020 阿川工務店,inc</a></div>
         </div>
 
-        
-        
     </footer>
+    
 
 <script src="js/work.js"></script><!--画像。vue.js-->
-<!--<script src="js/scroll-nav.js"></script> ナビゲーションの動き。vue.js-->
+<!---<script src="js/scroll-nav.js"></script> ナビゲーションの動き。ここでぐいっと動くvue.js-->
 <script src="js/scroll-link.js"></script><!--アンカーリンク。js-->
 <script src="js/top.js"></script><!--topへ戻る-->
 <script src="js/fadein.js"></script><!--topへ戻る-->
+<script src="js/sp-menu.js"></script><!--スマホメニューの動き-->
 
 </body>
 </html>

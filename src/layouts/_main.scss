@@ -1,10 +1,24 @@
 .xl-main{
     height: 800px;
+    @media screen and (max-width: $res-max-width) {
+        height: auto;
+    }
+
 }
+.l-hearing-main{
+    height: 800px;
+    @media screen and (max-width: $res-max-width) {
+        height: 650px;
+    }
+}
+
 .l-main{
     height: 600px;
     width: 90%;
     margin: auto;
+    @media screen and (max-width: $res-max-width) {
+        height: auto;
+    }
 }
 
 .s-main{
@@ -16,6 +30,7 @@
 .l-space{
     height: 100px;
     width: 100%;
+
     &__border{
         display: block;
         border-bottom:black 3px solid;

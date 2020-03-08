@@ -65,6 +65,37 @@
   opacity: 0;
 }
 
+.smooth-button::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 5%;
+  background-color: #bbd2c570;
+  height: 100%;
+  transition: 0.4s;
+}
+@media screen and (max-width: 415px) {
+  .smooth-button::before {
+    display: none;
+  }
+}
+.smooth-button:hover::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  background-color: #9df1c270;
+  height: 100%;
+  transition: 0.4s;
+}
+@media screen and (max-width: 415px) {
+  .smooth-button:hover::before {
+    display: none;
+  }
+}
+
 .l-header {
   height: 160px;
   width: 100%;
@@ -83,11 +114,30 @@
 .xl-main {
   height: 800px;
 }
+@media screen and (max-width: 415px) {
+  .xl-main {
+    height: auto;
+  }
+}
+
+.l-hearing-main {
+  height: 800px;
+}
+@media screen and (max-width: 415px) {
+  .l-hearing-main {
+    height: 650px;
+  }
+}
 
 .l-main {
   height: 600px;
   width: 90%;
   margin: auto;
+}
+@media screen and (max-width: 415px) {
+  .l-main {
+    height: auto;
+  }
 }
 
 .s-main {
@@ -131,9 +181,21 @@
   margin-top: 50px;
   position: relative;
 }
+@media screen and (max-width: 415px) {
+  .c-about__wrapper {
+    margin-top: 0px;
+    display: block;
+  }
+}
 .c-about__box {
   width: 50%;
   margin-top: 100px;
+}
+@media screen and (max-width: 415px) {
+  .c-about__box {
+    margin-top: 0px;
+    width: 100%;
+  }
 }
 .c-about__box h2 {
   text-align: center;
@@ -145,12 +207,24 @@
   text-shadow: 1px 1px black;
   border: 1px solid black;
 }
+@media screen and (max-width: 415px) {
+  .c-about__box h2 {
+    margin: 20px auto;
+    width: 90%;
+    font-size: 18px;
+  }
+}
 .c-about__box p {
   width: 80%;
   text-align: left;
   margin: 30px auto;
   letter-spacing: 1px;
   line-height: 24px;
+}
+@media screen and (max-width: 415px) {
+  .c-about__box p {
+    font-size: 14px;
+  }
 }
 .c-about__backbox {
   position: absolute;
@@ -165,6 +239,12 @@
   width: 50%;
   margin: 100px auto;
 }
+@media screen and (max-width: 415px) {
+  .c-about__image {
+    width: 80%;
+    margin: 50px auto;
+  }
+}
 .c-about__image img {
   width: 95%;
   box-shadow: 4px 4px black;
@@ -178,6 +258,7 @@
   text-shadow: 1px 1px black;
   width: 200px;
   height: 50px;
+  position: relative;
 }
 .c-about__btn-wrapper button a {
   color: white;
@@ -437,11 +518,33 @@ form textarea {
   width: 100%;
   height: 100%;
 }
+.c-hearing__image {
+  width: 50%;
+  margin: 100px auto;
+  display: none;
+}
+@media screen and (max-width: 415px) {
+  .c-hearing__image {
+    display: block;
+    width: 80%;
+    margin: 50px auto;
+  }
+}
+.c-hearing__image img {
+  width: 95%;
+  box-shadow: 4px 4px black;
+}
 .c-hearing__bg {
   background: url("../image/hear.jpg");
   background-size: cover;
   width: 100%;
   height: 100%;
+}
+@media screen and (max-width: 415px) {
+  .c-hearing__bg {
+    background: none;
+    height: auto;
+  }
 }
 .c-hearing__text {
   position: absolute;
@@ -451,9 +554,23 @@ form textarea {
   width: 40%;
   border: 0.5px dotted;
 }
+@media screen and (max-width: 415px) {
+  .c-hearing__text {
+    position: relative;
+    top: auto;
+    right: auto;
+    margin: 50px auto;
+    width: 90%;
+  }
+}
 .c-hearing__text h2 {
-  margin: 50px auto;
+  margin: 25px auto;
   text-align: center;
+}
+@media screen and (max-width: 415px) {
+  .c-hearing__text h2 {
+    font-size: 18px;
+  }
 }
 .c-hearing__text p {
   letter-spacing: 1px;
@@ -466,6 +583,15 @@ form textarea {
   position: absolute;
   top: 35%;
   left: 25%;
+}
+@media screen and (max-width: 415px) {
+  .c-hearing__btn-wrapper {
+    display: none;
+    display: block;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
 }
 .c-hearing__btn-wrapper button {
   background-color: #14D0B3;
@@ -488,6 +614,14 @@ form textarea {
   max-height: 200px;
   float: right;
 }
+.c-news__space {
+  height: 100px;
+}
+@media screen and (max-width: 415px) {
+  .c-news__space {
+    height: 0;
+  }
+}
 .c-news__text {
   width: 55%;
   float: left;
@@ -496,11 +630,30 @@ form textarea {
   border-left: 50px solid #14D0B3;
   border-top: 1px black solid;
 }
+@media screen and (max-width: 415px) {
+  .c-news__text {
+    width: 100%;
+    float: none;
+    margin: auto;
+    border-left: 5px solid #14D0B3;
+  }
+}
 .c-news__text h2 {
   margin: 20px;
 }
+@media screen and (max-width: 415px) {
+  .c-news__text h2 {
+    margin: 10px;
+    font-size: 18px;
+  }
+}
 .c-news__text p {
   margin: 10px;
+}
+@media screen and (max-width: 415px) {
+  .c-news__text p {
+    font-size: 12px;
+  }
 }
 
 .c-recruit__wrapper {
@@ -568,6 +721,10 @@ form textarea {
   animation-name: moveInRight;
   animation-duration: 0.7s;
 }
+.c-return:hover {
+  transform: scale(1.03);
+  opacity: 0.9;
+}
 .c-return a {
   text-decoration: none;
   color: white;
@@ -604,7 +761,7 @@ form textarea {
   left: 0;
   width: 100%;
   height: 4px;
-  background-color: #fff;
+  background-color: #d2c0c0eb;
   border-radius: 4px;
 }
 
@@ -746,6 +903,11 @@ form textarea {
   border-bottom: solid 2px black;
   width: 50%;
   margin: 100px auto;
+}
+@media screen and (max-width: 415px) {
+  .c-work__toptext {
+    width: 80%;
+  }
 }
 .c-work__target {
   transition: 0.3s;

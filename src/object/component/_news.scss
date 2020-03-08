@@ -1,3 +1,4 @@
+
 .c-news{
     &__wrapper{
         //overflow: hidden;
@@ -10,6 +11,13 @@
 
         }
     }
+    &__space{
+        height:100px;
+        @media screen and (max-width: $res-max-width) {
+            height:0;
+            }
+        
+    }
 
     &__text{
         width: 55%;
@@ -18,13 +26,25 @@
         margin: 20px auto auto 30px;
         border-left: 50px solid #14D0B3;
         border-top: 1px black solid;
+        @media screen and (max-width: $res-max-width) {            
+            width: 100%;
+            float: none;
+            margin: auto;
+            border-left: 5px solid #14D0B3;
+            }
         h2{
             margin: 20px;
+            @media screen and (max-width: $res-max-width) {
+                margin:10px;
+                font-size: 18px;
+                }
         }
         p{
             margin: 10px;
+            @media screen and (max-width: $res-max-width) {
+                font-size: 12px;
+                }
         }
-
     }
 
 }

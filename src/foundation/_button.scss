@@ -1,0 +1,32 @@
+.smooth-button{
+
+    &::before{
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: "";
+        width: 5%;
+        background-color:#bbd2c570;
+        height: 100%;   
+        transition: 0.4s; 
+        @media screen and (max-width: $res-max-width) {
+            display: none;
+        }
+
+    }
+    &:hover{
+        &::before{
+            position: absolute;
+            top: 0;
+            left: 0;
+            content: "";
+            width: 100%;
+            background-color:#9df1c270;
+            height: 100%;   
+            transition: 0.4s; 
+            @media screen and (max-width: $res-max-width) {
+                display: none;
+        }
+    }
+    }
+}

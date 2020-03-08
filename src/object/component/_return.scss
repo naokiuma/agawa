@@ -14,8 +14,13 @@
     z-index: 10;
     animation-name: moveInRight;
     animation-duration: 0.7s;
+    &:hover{
+        transform:scale(1.03);
+        opacity: 0.9;
+    }
     a{
         text-decoration: none;
         color: white;
+
     }
 }

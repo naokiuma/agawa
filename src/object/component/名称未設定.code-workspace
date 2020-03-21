@@ -1,28 +1,16 @@
 {
 	"folders": [
 		{
-			"path": "/Applications/MAMP/htdocs/skylover"
-		},
-		{
 			"path": "/Applications/MAMP/htdocs/switchreviews"
-		},
-		{
-			"path": "/Users/naoya/Desktop/paizaphp"
 		},
 		{
 			"path": "/Users/naoya/Desktop/vue-router:vuex"
 		},
 		{
-			"path": "/Users/naoya/Desktop/勉強サイト/テスト部l7"
-		},
-		{
-			"path": "/Applications/MAMP/htdocs/cryptoapp"
-		},
-		{
-			"path": "/Users/naoya/Desktop/sharemotion"
-		},
-		{
 			"path": "/Users/naoya/Desktop/practice_site/agawa"
+		},
+		{
+			"path": "/Users/naoya/Desktop/share-emotion"
 		}
 	],
 	"settings": {}

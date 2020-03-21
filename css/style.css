@@ -346,6 +346,11 @@ form input {
   padding: 5px 15px;
   box-shadow: 4px 4px;
 }
+@media screen and (max-width: 415px) {
+  form input {
+    width: 80%;
+  }
+}
 
 form textarea {
   height: 200px;
@@ -364,6 +369,11 @@ form textarea {
   text-align: center;
   box-shadow: 4px 4px;
   margin: 10px;
+}
+@media screen and (max-width: 415px) {
+  .c-form__submitbtn {
+    width: 100px;
+  }
 }
 .c-form__submitbtn:hover {
   box-shadow: 5px 5px;
@@ -491,6 +501,11 @@ form textarea {
 .c-nav__wrapper {
   writing-mode: vertical-rl;
   margin: auto 50px;
+}
+@media screen and (max-width: 415px) {
+  .c-nav__wrapper {
+    display: none;
+  }
 }
 .c-nav__wrapper ul {
   height: 100%;
@@ -661,14 +676,31 @@ form textarea {
   display: flex;
   justify-content: space-between;
 }
+@media screen and (max-width: 415px) {
+  .c-recruit__wrapper {
+    display: block;
+  }
+}
 .c-recruit__side {
   width: 25%;
   height: 100%;
   text-align: center;
 }
+@media screen and (max-width: 415px) {
+  .c-recruit__side {
+    width: 100%;
+    height: 200px;
+  }
+}
 .c-recruit__side h2 {
   font-weight: lighter;
   margin: 150px auto 50px auto;
+}
+@media screen and (max-width: 415px) {
+  .c-recruit__side h2 {
+    font-size: 18px;
+    margin: 30px auto 10px auto;
+  }
 }
 .c-recruit__side h2::after {
   content: "Recruit";
@@ -682,6 +714,12 @@ form textarea {
   margin: auto;
   background-color: yellow;
   padding: 10px;
+}
+@media screen and (max-width: 415px) {
+  .c-recruit__side p {
+    width: 80%;
+    font-size: 14px;
+  }
 }
 .c-recruit__hero {
   width: 75%;
@@ -854,6 +892,12 @@ form textarea {
   position: relative;
   width: 30%;
 }
+@media screen and (max-width: 415px) {
+  .c-work__group {
+    width: 70%;
+    margin: 0 auto 30px auto;
+  }
+}
 .c-work__group span {
   position: absolute;
   top: 10%;
@@ -866,6 +910,11 @@ form textarea {
   display: flex;
   justify-content: space-between;
   margin: 50px auto;
+}
+@media screen and (max-width: 415px) {
+  .c-work__image {
+    display: block;
+  }
 }
 .c-work__image img {
   width: 100%;
@@ -906,6 +955,7 @@ form textarea {
 @media screen and (max-width: 415px) {
   .c-work__toptext {
     width: 80%;
+    margin: 30px auto;
   }
 }
 .c-work__target {
@@ -936,6 +986,11 @@ form textarea {
 .c-work__toptext h2 {
   margin: 0;
   padding: 0;
+}
+@media screen and (max-width: 415px) {
+  .c-work__toptext h2 {
+    font-size: 18px;
+  }
 }
 
 .c-job__infowrapper {

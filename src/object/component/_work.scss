@@ -22,6 +22,9 @@
         text-align: center;
         height: 100px;
         line-height: 100px;
+        @media screen and (max-width: $res-max-width) {
+
+        }
         button{
             width: 100px;
             height: 40px;
@@ -33,6 +36,10 @@
     &__group{
         position: relative;
         width: 30%;
+        @media screen and (max-width: $res-max-width) {
+            width: 70%;
+            margin: 0 auto 30px auto;
+    }
         span{
             position: absolute;
             top:10%;
@@ -46,6 +53,10 @@
         display: flex;
         justify-content: space-between;
         margin: 50px auto;
+        @media screen and (max-width: $res-max-width) {
+            display: block;
+        }
+
         img{
             //height: 280px;
             width: 100%;
@@ -87,6 +98,7 @@
             margin: 100px auto;
             @media screen and (max-width: $res-max-width) {
                 width: 80%;
+                margin: 30px auto;
 
         }
     }
@@ -116,4 +128,7 @@
 .c-work__toptext h2 {
     margin: 0; 
     padding: 0;
+    @media screen and (max-width: $res-max-width) {
+        font-size: 18px;
+}
 }

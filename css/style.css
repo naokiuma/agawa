@@ -412,6 +412,18 @@ form textarea {
     padding-top: 0;
   }
 }
+.c-hero__logo img {
+  width: 50px;
+  position: absolute;
+  left: 25px;
+  top: 50px;
+}
+@media screen and (max-width: 415px) {
+  .c-hero__logo img {
+    top: 15px;
+    left: 55px;
+  }
+}
 .c-hero__logo a {
   text-decoration: none;
   color: white;

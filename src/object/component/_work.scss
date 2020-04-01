@@ -15,6 +15,13 @@
         } 
         p{
             text-align: center;
+            @media screen and (max-width: $res-max-width) {
+                font-size: 14px;
+                width: 80%;
+                margin: auto;
+                line-height:20px;
+            }
+
         }
     }
 
@@ -45,7 +52,8 @@
             top:10%;
             left:5%;
             color: white;
-            background-color: #0606064d;
+            background-color: #06060636;
+            padding: 3px;
         }
     }
     &__image{

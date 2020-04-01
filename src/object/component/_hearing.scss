@@ -36,6 +36,7 @@
         background-color: #f0f8ffd4;;
         width: 40%;
         border: 0.5px dotted;
+        box-shadow: 2px 2px black;
         @media screen and (max-width: $res-max-width) {
             position: relative;
             top:auto;
@@ -56,7 +57,9 @@
         p{
             letter-spacing: 1px;
             line-height: 25px;
-            text-align: center;
+            text-align: left;
+            padding-left: 3%;
+            font-size: 14px;
         }
     }
     &__btn-wrapper{

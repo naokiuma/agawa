@@ -15,6 +15,11 @@
         li{
             display: inline;
             margin: 5px 20px;
+            @media screen and (max-width: $res-max-width) {
+                font-size: 10px;
+                margin:auto;
+            }
+            
 
             a{
                 text-decoration: none;
@@ -43,6 +48,10 @@
         height: 60px;
         line-height: 60px;
         margin: auto 5px;
+        @media screen and (max-width: $res-max-width) {
+            width: 50%;
+        }
+
         a{
             text-align: center;
             text-decoration: none;

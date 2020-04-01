@@ -205,6 +205,7 @@
   color: white;
   text-shadow: 1px 1px black;
   border: 1px solid black;
+  box-shadow: 2px 2px black;
 }
 @media screen and (max-width: 415px) {
   .c-about__box h2 {
@@ -282,6 +283,12 @@
   display: inline;
   margin: 5px 20px;
 }
+@media screen and (max-width: 415px) {
+  .c-footer__info li {
+    font-size: 10px;
+    margin: auto;
+  }
+}
 .c-footer__info li a {
   text-decoration: none;
   color: white;
@@ -306,6 +313,11 @@
   height: 60px;
   line-height: 60px;
   margin: auto 5px;
+}
+@media screen and (max-width: 415px) {
+  .c-footer__logo {
+    width: 50%;
+  }
 }
 .c-footer__logo a {
   text-align: center;
@@ -337,6 +349,11 @@
   margin: 10px;
   font-size: 20px;
   letter-spacing: 2px;
+}
+@media screen and (max-width: 415px) {
+  .c-form__wrapper p {
+    font-size: 14px;
+  }
 }
 
 form input {
@@ -579,6 +596,7 @@ form textarea {
   background-color: #f0f8ffd4;
   width: 40%;
   border: 0.5px dotted;
+  box-shadow: 2px 2px black;
 }
 @media screen and (max-width: 415px) {
   .c-hearing__text {
@@ -601,7 +619,9 @@ form textarea {
 .c-hearing__text p {
   letter-spacing: 1px;
   line-height: 25px;
-  text-align: center;
+  text-align: left;
+  padding-left: 3%;
+  font-size: 14px;
 }
 .c-hearing__btn-wrapper {
   text-align: center;
@@ -691,6 +711,7 @@ form textarea {
 @media screen and (max-width: 415px) {
   .c-recruit__wrapper {
     display: block;
+    height: 600px;
   }
 }
 .c-recruit__side {
@@ -701,7 +722,7 @@ form textarea {
 @media screen and (max-width: 415px) {
   .c-recruit__side {
     width: 100%;
-    height: 200px;
+    height: 150px;
   }
 }
 .c-recruit__side h2 {
@@ -721,36 +742,77 @@ form textarea {
 }
 .c-recruit__side p {
   text-shadow: 2px;
-  border: 2px black dotted;
-  width: 50%;
+  width: 150%;
   margin: auto;
-  background-color: yellow;
-  padding: 10px;
+  background-image: linear-gradient(to right, #f7f7b7 0%, #fff07d 51%, #ecde12 100%);
+  position: relative;
+  letter-spacing: 3px;
+  height: 100px;
+  line-height: 100px;
+  margin-left: 20px;
+  background-size: 200% auto;
+  box-shadow: 4px 2px 1px;
+}
+.c-recruit__side p:hover {
+  background-position: right center;
 }
 @media screen and (max-width: 415px) {
   .c-recruit__side p {
     width: 80%;
     font-size: 14px;
+    height: 50px;
+    line-height: 50px;
+    margin: auto;
   }
 }
 .c-recruit__hero {
   width: 75%;
   height: 100%;
 }
+@media screen and (max-width: 415px) {
+  .c-recruit__hero {
+    width: 100%;
+    height: 60%;
+  }
+}
 .c-recruit__bg {
   background: url(../image/r-hero.jpg);
   background-size: cover;
   height: 85%;
 }
+@media screen and (max-width: 415px) {
+  .c-recruit__bg {
+    background: none;
+    height: 55%;
+  }
+}
+.c-recruit__bg img {
+  width: 100%;
+  display: none;
+}
+@media screen and (max-width: 415px) {
+  .c-recruit__bg img {
+    display: block;
+  }
+}
 .c-recruit__text {
   height: 15%;
+  background-color: #14D0B3;
 }
 .c-recruit__text h1 {
   font-size: 30px;
   text-align: center;
   height: 100px;
   line-height: 100px;
-  background-color: #8080802b;
+  background-color: #14D0B3;
+  color: white;
+  text-shadow: 1px 1px black;
+}
+@media screen and (max-width: 415px) {
+  .c-recruit__text h1 {
+    font-size: 16px;
+    color: white;
+  }
 }
 
 .c-return {
@@ -810,7 +872,7 @@ form textarea {
   left: 0;
   width: 100%;
   height: 4px;
-  background-color: #d2c0c0eb;
+  background-color: #eee6e6eb;
   border-radius: 4px;
 }
 
@@ -888,6 +950,14 @@ form textarea {
 .c-work__wrapper p {
   text-align: center;
 }
+@media screen and (max-width: 415px) {
+  .c-work__wrapper p {
+    font-size: 14px;
+    width: 80%;
+    margin: auto;
+    line-height: 20px;
+  }
+}
 .c-work__start {
   text-align: center;
   height: 100px;
@@ -915,7 +985,8 @@ form textarea {
   top: 10%;
   left: 5%;
   color: white;
-  background-color: #0606064d;
+  background-color: #06060636;
+  padding: 3px;
 }
 .c-work__image {
   width: 90%;

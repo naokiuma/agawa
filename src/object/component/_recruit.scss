@@ -6,6 +6,7 @@
         justify-content: space-between;
         @media screen and (max-width: $res-max-width) {
             display: block;
+            height: 600px;
 
         }
     }
@@ -15,7 +16,7 @@
         text-align: center;
         @media screen and (max-width: $res-max-width) {
             width: 100%;
-            height: 200px;
+            height: 150px;
         }
         h2{ 
             font-weight: lighter;
@@ -33,35 +34,75 @@
         }
         p{
             text-shadow: 2px;
-            border: 2px black dotted;
-            width:50%;
+            width:150%;
             margin:auto;
-            background-color: yellow;
-            padding: 10px;
+            background-image: linear-gradient(to right, #f7f7b7 0%, #fff07d 51%, #ecde12 100%);            position: relative;  
+            letter-spacing: 3px;
+            height: 100px;
+            line-height: 100px;
+            margin-left: 20px;
+            background-size: 200% auto;
+            box-shadow: 4px 2px 1px;
+            &:hover{
+                background-position: right center;
+            }
+            
+
             @media screen and (max-width: $res-max-width) {
                 width: 80%;
                 font-size: 14px;
+                height:50px;
+                line-height:50px;
+                margin: auto;
             }
+ 
         }
     }
     &__hero{
         width: 75%;
         height: 100%;
+        @media screen and (max-width: $res-max-width) {
+            width: 100%;
+            height: 60%;
+        }
     }
     &__bg{
         background:url(../image/r-hero.jpg);
         background-size: cover;
         height: 85%;
+        
+        @media screen and (max-width: $res-max-width) {
+            background: none;
+            height: 55%;
+        }
+        img{
+            width: 100%;
+            display: none;
+            @media screen and (max-width: $res-max-width) {
+                display: block;
+                
+            }
+
+        }
 
     }
     &__text{
         height: 15%;
+        background-color: #14D0B3;
         h1{
             font-size: 30px;
             text-align: center;
             height: 100px;
             line-height: 100px;
-            background-color: #8080802b;
+            background-color: #14D0B3;
+            color: white;
+            text-shadow: 1px 1px black;
+            @media screen and (max-width: $res-max-width) {
+                font-size: 16px;
+                color: white;
+            }
+
         }
     }
 }
+

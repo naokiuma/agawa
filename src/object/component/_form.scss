@@ -21,6 +21,9 @@
             margin: 10px;
             font-size: 20px;
             letter-spacing: 2px;
+            @media screen and (max-width: $res-max-width) {
+                font-size: 14px;
+            }
         }
     }
 

@@ -9,23 +9,43 @@
         width: 90%;
         height: 100%;
         margin: auto;
-        background-color: #80808061;
+        background-color: #06e36761;
         display: flex;
         justify-content: space-between;
+        @media screen and (max-width: $res-max-width) {
+            display: block;
+            background-color: white;
+        }
+
     }
     &__card{
         width: 45%;
         margin: auto;
         height: 90%;
         background-color: white;
+        @media screen and (max-width: $res-max-width) {
+            width: 100%;
+            height: auto;
+        }
+
         h3{
             margin: 50px;
             font-style:lighter;
+            @media screen and(max-width:$res-max-width){
+                margin: 20px auto;
+
+            }
+            
         }
         p{
             margin: 10px;
             letter-spacing: 1px;
             height: 150px;
+            @media screen and(max-width:$res-max-width){
+                font-size: 12px;
+                line-height: 16px;
+                height: auto;
+            }
         }
         img{
             width: 60%;
@@ -33,15 +53,13 @@
         }
     }
     &__feature{
-        width: 90%;
+        width: 70%;
         height: 100%;
         margin: auto auto 50px auto;
-        background-color: #80808061;
-        display:flex;
-        flex-flow: column;
-        -webkit-box-pack:justify;
-        -ms-flex-pack:justify;
-        justify-content:space-between;
+        @media screen and(max-width:$res-max-width){
+            height: auto;
+        }
+
     }
     &__each{
         height: 30%;
@@ -49,17 +67,41 @@
         margin: auto;
         display: flex;
         justify-content: space-around;
+        background-color: white;
+        @media screen and(max-width:$res-max-width){
+            height: auto;
+            display: block;
+        }
+
+        
         img{
             border: 3px solid black;
             height: 80%;
             margin: auto 50px;
+            @media screen and(max-width:$res-max-width){
+                margin: 20px auto;
+                height: auto;
+                width: 200px;
+            }
+
+
+
         }
         p{
             width: 75%;
             margin: auto;
+            @media screen and(max-width:$res-max-width){
+                font-size: 12px;
+                width: 90%;
+                margin: 10px auto;
+            }
         }
         span{
             font-size: 20px;
+            @media screen and(max-width:$res-max-width){
+                font-size: 16px;
+            }
+
         }
 
     }

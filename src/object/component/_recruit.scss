@@ -6,7 +6,7 @@
         justify-content: space-between;
         @media screen and (max-width: $res-max-width) {
             display: block;
-            height: 600px;
+            height: 350px;
 
         }
     }
@@ -38,16 +38,16 @@
             margin:auto;
             background-image: linear-gradient(to right, #f7f7b7 0%, #fff07d 51%, #ecde12 100%);            position: relative;  
             letter-spacing: 3px;
-            height: 100px;
-            line-height: 100px;
+            height: 80px;
+            line-height: 80px;
             margin-left: 20px;
             background-size: 200% auto;
             box-shadow: 4px 2px 1px;
+            border-radius: 40px;
+            position: relative;
             &:hover{
                 background-position: right center;
             }
-            
-
             @media screen and (max-width: $res-max-width) {
                 width: 80%;
                 font-size: 14px;

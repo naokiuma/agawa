@@ -141,9 +141,15 @@
 }
 
 .s-main {
-  height: 250px;
-  margin: 100px auto auto auto;
-  width: 90%;
+  height: 100px;
+  margin: 30px auto auto auto;
+  width: 70%;
+}
+@media screen and (max-width: 415px) {
+  .s-main {
+    width: 80%;
+    padding-top: 25px;
+  }
 }
 
 .l-space {
@@ -394,6 +400,7 @@ form textarea {
 }
 .c-form__submitbtn:hover {
   box-shadow: 5px 5px;
+  transform: translateY(-1px);
 }
 
 .c-hero {
@@ -651,10 +658,18 @@ form textarea {
   text-decoration: none;
 }
 
+.bg {
+  background: url(../image/news.jpg);
+  background-color: rgba(255, 255, 255, 0.8);
+  background-blend-mode: lighten;
+  background-size: cover;
+}
+
 .c-news__wrapper {
   text-align: center;
   animation-name: moveInLeft;
   animation-duration: 0.5s;
+  position: relative;
 }
 .c-news__wrapper img {
   max-height: 200px;
@@ -711,7 +726,7 @@ form textarea {
 @media screen and (max-width: 415px) {
   .c-recruit__wrapper {
     display: block;
-    height: 600px;
+    height: 350px;
   }
 }
 .c-recruit__side {
@@ -747,11 +762,13 @@ form textarea {
   background-image: linear-gradient(to right, #f7f7b7 0%, #fff07d 51%, #ecde12 100%);
   position: relative;
   letter-spacing: 3px;
-  height: 100px;
-  line-height: 100px;
+  height: 80px;
+  line-height: 80px;
   margin-left: 20px;
   background-size: 200% auto;
   box-shadow: 4px 2px 1px;
+  border-radius: 40px;
+  position: relative;
 }
 .c-recruit__side p:hover {
   background-position: right center;
@@ -997,6 +1014,7 @@ form textarea {
 @media screen and (max-width: 415px) {
   .c-work__image {
     display: block;
+    margin: auto;
   }
 }
 .c-work__image img {
@@ -1086,9 +1104,15 @@ form textarea {
   width: 90%;
   height: 100%;
   margin: auto;
-  background-color: #80808061;
+  background-color: #06e36761;
   display: flex;
   justify-content: space-between;
+}
+@media screen and (max-width: 415px) {
+  .c-job__cards {
+    display: block;
+    background-color: white;
+  }
 }
 .c-job__card {
   width: 45%;
@@ -1096,29 +1120,46 @@ form textarea {
   height: 90%;
   background-color: white;
 }
+@media screen and (max-width: 415px) {
+  .c-job__card {
+    width: 100%;
+    height: auto;
+  }
+}
 .c-job__card h3 {
   margin: 50px;
   font-style: lighter;
+}
+@media screen and (max-width: 415px) {
+  .c-job__card h3 {
+    margin: 20px auto;
+  }
 }
 .c-job__card p {
   margin: 10px;
   letter-spacing: 1px;
   height: 150px;
 }
+@media screen and (max-width: 415px) {
+  .c-job__card p {
+    font-size: 12px;
+    line-height: 16px;
+    height: auto;
+  }
+}
 .c-job__card img {
   width: 60%;
   box-shadow: 4px 4px;
 }
 .c-job__feature {
-  width: 90%;
+  width: 70%;
   height: 100%;
   margin: auto auto 50px auto;
-  background-color: #80808061;
-  display: flex;
-  flex-flow: column;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+}
+@media screen and (max-width: 415px) {
+  .c-job__feature {
+    height: auto;
+  }
 }
 .c-job__each {
   height: 30%;
@@ -1126,18 +1167,44 @@ form textarea {
   margin: auto;
   display: flex;
   justify-content: space-around;
+  background-color: white;
+}
+@media screen and (max-width: 415px) {
+  .c-job__each {
+    height: auto;
+    display: block;
+  }
 }
 .c-job__each img {
   border: 3px solid black;
   height: 80%;
   margin: auto 50px;
 }
+@media screen and (max-width: 415px) {
+  .c-job__each img {
+    margin: 20px auto;
+    height: auto;
+    width: 200px;
+  }
+}
 .c-job__each p {
   width: 75%;
   margin: auto;
 }
+@media screen and (max-width: 415px) {
+  .c-job__each p {
+    font-size: 12px;
+    width: 90%;
+    margin: 10px auto;
+  }
+}
 .c-job__each span {
   font-size: 20px;
+}
+@media screen and (max-width: 415px) {
+  .c-job__each span {
+    font-size: 16px;
+  }
 }
 
 .hidden {

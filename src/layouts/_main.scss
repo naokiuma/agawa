@@ -22,9 +22,14 @@
 }
 
 .s-main{
-    height: 250px;
-    margin: 100px auto auto auto;
-    width: 90%;
+    height: 100px;
+    margin: 30px auto auto auto;
+    width: 70%;
+    @media screen and (max-width: $res-max-width) {
+        width: 80%;
+        padding-top: 25px;
+    }
+
 }
 
 .l-space{

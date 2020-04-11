@@ -63,6 +63,7 @@
         margin: 50px auto;
         @media screen and (max-width: $res-max-width) {
             display: block;
+            margin: auto;
         }
 
         img{

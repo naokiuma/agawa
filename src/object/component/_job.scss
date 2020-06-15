@@ -41,6 +41,7 @@
             margin: 10px;
             letter-spacing: 1px;
             height: 150px;
+            font-size: 14px;
             @media screen and(max-width:$res-max-width){
                 font-size: 12px;
                 line-height: 16px;
@@ -51,6 +52,7 @@
             width: 60%;
             box-shadow: 4px 4px;
         }
+ 
     }
     &__feature{
         width: 70%;

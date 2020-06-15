@@ -1,32 +1,36 @@
 {
 	"folders": [
 		{
-			"path": "/Users/naoya/Desktop/vue-router:vuex"
+			"name": "paizaphp",
+			"path": "../../../../../paizaphp"
 		},
 		{
-			"path": "/Users/naoya/Desktop/practice_site/agawa"
+			"name": "php",
+			"path": "../../../../../php"
 		},
 		{
-			"path": "/Users/naoya/Desktop/vue_site"
+			"name": "lionsite",
+			"path": "../../../../lionsite"
 		},
 		{
-			"path": "/Applications/MAMP/htdocs/switchreviews"
+			"name": "skylover",
+			"path": "../../../../../../../../Applications/MAMP/htdocs/skylover"
 		},
 		{
-			"path": "/Users/naoya/Desktop/paizaphp"
+			"name": "switchreviews",
+			"path": "../../../../../../../../Applications/MAMP/htdocs/switchreviews"
 		},
 		{
-			"path": "/Users/naoya/Desktop/vue-traning"
+			"path": "../../../../../../../../Applications/MAMP/htdocs/localmap"
 		},
 		{
-			"path": "/Users/naoya/Desktop/shell"
+			"path": "../../../../../udemy-react-redux-crud-application"
 		},
 		{
-			"path": "/Users/naoya/Desktop/php"
-		},
-		{
-			"path": "/Applications/MAMP/htdocs/skylover"
+			"path": "../../.."
 		}
 	],
-	"settings": {}
+	"settings": {
+		"git.ignoreLimitWarning": true
+	}
 }
